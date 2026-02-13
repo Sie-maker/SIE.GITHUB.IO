@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SIR | Custom Perfumes</title>
+<title>SIE | Custom Perfumes</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 
@@ -15,14 +15,31 @@ body {
     color: white;
 }
 
-/* Instagram Banner */
+/* Moving Instagram Banner */
 .top-banner {
     background: black;
     color: #ffb6d9;
-    text-align: center;
-    padding: 10px;
-    font-size: 14px;
-    letter-spacing: 1px;
+    padding: 12px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.banner-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scrollText 10s linear infinite;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+@keyframes scrollText {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
 
 /* Header */
@@ -135,7 +152,7 @@ footer {
 </div>
 
 <header>
-    <div class="logo">SIR</div>
+    <div class="logo">SIE</div>
 </header>
 
 <section class="hero">
@@ -170,7 +187,7 @@ footer {
 </section>
 
 <footer>
-    © 2026 SIR Perfumes | Crafted with Elegance
+    © 2026 SIE Perfumes | Crafted with Elegance
 </footer>
 
 </body>
