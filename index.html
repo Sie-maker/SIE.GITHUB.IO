@@ -168,6 +168,60 @@ footer {
     from { transform: translateX(0%); }
     to { transform: translateX(-100%); }
 }
+    /* --- BEST SELLERS SLIDER --- */
+
+.best-seller-section {
+    padding: 60px 20px;
+    background: black;
+    color: white;
+}
+
+.best-seller-title {
+    font-size: 28px;
+    margin-bottom: 25px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.best-seller-title span {
+    border-bottom: 2px solid white;
+    padding-bottom: 4px;
+}
+
+.best-seller-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.best-seller-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.best-card {
+    min-width: 260px;
+    background: #111;
+    border-radius: 12px;
+    overflow: hidden;
+    flex-shrink: 0;
+    transition: 0.3s;
+}
+
+.best-card:hover {
+    transform: scale(1.05);
+}
+
+.best-card img {
+    width: 100%;
+    display: block;
+}
+
+.best-card h3 {
+    padding: 15px;
+    font-size: 18px;
+    color: white;
+}
 </style>
 </head>
 
@@ -215,6 +269,42 @@ footer {
             <a href="#" class="btn">Order Now</a>
         </div>
     </div>
+</section>
+    <section class="best-seller-section">
+
+    <h2 class="best-seller-title">
+        You are in <span>best sellers</span>
+    </h2>
+
+    <div class="best-seller-slider">
+
+        <div class="best-card">
+            <img src="perfume1.jpg" alt="">
+            <h3>Midnight Luxe</h3>
+        </div>
+
+        <div class="best-card">
+            <img src="perfume2.jpg" alt="">
+            <h3>Royal Leather</h3>
+        </div>
+
+        <div class="best-card">
+            <img src="perfume3.jpg" alt="">
+            <h3>Dark Oud</h3>
+        </div>
+
+        <div class="best-card">
+            <img src="perfume1.jpg" alt="">
+            <h3>Velvet Noir</h3>
+        </div>
+
+        <div class="best-card">
+            <img src="perfume2.jpg" alt="">
+            <h3>Signature Blend</h3>
+        </div>
+
+    </div>
+
 </section>
 
 <footer>
