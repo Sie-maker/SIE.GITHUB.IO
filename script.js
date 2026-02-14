@@ -108,3 +108,14 @@ function closeMenu() {
 window.submitReview = submitReview;
 window.deleteReview = deleteReview;
 window.adminLogin = adminLogin;
+
+// SECRET KEY TO SHOW ADMIN BUTTON
+document.addEventListener("keydown", function(event) {
+    if (event.ctrlKey && event.key.toLowerCase() === "a") {
+        const btn = document.getElementById("adminBtn");
+        if (btn.style.display === "none" || btn.style.display === "") {
+            btn.style.display = "inline-block";
+            alert("Admin button unlocked");
+        }
+    }
+});
