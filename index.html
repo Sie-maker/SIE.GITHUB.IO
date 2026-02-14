@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="stylesheet" href="style.css">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SIE | Custom Perfumes</title>
@@ -8,7 +9,29 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
+    <script src="script.js"></script>
 body {
+    <header class="navbar">
+
+    <div class="menu-icon" onclick="openDrawer()">☰</div>
+
+    <div class="logo">MECNEX</div>
+
+    <div class="nav-icons">
+
+        <div class="search-wrapper">
+            <span onclick="toggleSearch()">🔍</span>
+            <input type="text" class="search-input" placeholder="Search...">
+        </div>
+
+        <div class="cart-icon">
+            🛒
+            <span id="cart-count">0</span>
+        </div>
+
+    </div>
+
+</header>
     margin: 0;
     font-family: 'Poppins', sans-serif;
     background-color: #ffb6d9;  /* Soft Pink Background */
@@ -499,6 +522,26 @@ footer {
     </div>
 
 </footer>
+<!-- Overlay -->
+<div class="drawer-overlay" id="overlay"></div>
 
+<!-- Sliding Menu -->
+<div class="drawer" id="drawer">
+
+    <div class="drawer-links">
+        <a href="#">HOME</a>
+        <a href="#">SHOP</a>
+        <a href="#">HELP</a>
+        <a href="#">CONTACT US</a>
+        <a href="#">TRACK MY ORDER</a>
+        <a href="#">RETURN & EXCHANGE</a>
+    </div>
+
+    <div class="drawer-account">
+        <p>My Account</p>
+        <button>Log in</button>
+    </div>
+
+</div>
 </body>
 </html>
