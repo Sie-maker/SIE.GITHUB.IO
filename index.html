@@ -339,6 +339,39 @@ header::after {
 }
 </style>
 </head>
+    <!-- Overlay -->
+<div class="menu-overlay" id="menuOverlay" onclick="closeMenu()"></div>
+
+<!-- Slide Menu -->
+<div class="side-menu" id="sideMenu">
+
+    <!-- Top Section -->
+    <div class="menu-header">
+        <span class="close-btn" onclick="closeMenu()">✕</span>
+        <div class="menu-logo">SIE</div>
+        <div class="menu-icons">
+            <span>🔍</span>
+            <span>🛍️</span>
+        </div>
+    </div>
+
+    <!-- Menu Links -->
+    <div class="menu-links">
+        <a href="#">HOME</a>
+        <a href="#">SHOP</a>
+        <a href="#">HELP</a>
+        <a href="#">CONTACT US</a>
+        <a href="#">TRACK MY ORDER</a>
+        <a href="#">RETURN & EXCHANGE</a>
+    </div>
+
+    <!-- Bottom Account -->
+    <div class="menu-account">
+        <h3>My Account</h3>
+        <button>Log in</button>
+    </div>
+
+</div>
 <body>
 
 <div class="top-banner">
@@ -351,7 +384,7 @@ header::after {
 </div>
 
 <header>
-    <div class="logo">SIE</div>
+    <div class="menu-icon" onclick="openMenu()">☰</div>
 </header>
 
 <section class="hero">
