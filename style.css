@@ -89,43 +89,38 @@
     display: none;
 }
 
-/* You Might Also Like Section */
+/* YOU MIGHT ALSO LIKE SECTION */
 .related-section {
-    margin-top: 60px;
     text-align: center;
-}
-
-.related-title {
-    font-size: 26px;
-    margin-bottom: 30px;
-    color: #f5f5dc;
+    margin: 60px 0;
 }
 
 .related-product {
-    display: inline-block;
-    background: #f5f5dc;
-    padding: 20px;
-    border-radius: 10px;
-    width: 220px;
+    display: block;
+    width: 80%;
+    max-width: 350px;
+    margin: 20px auto;
+    padding: 25px;
+    background: #e8e6cf;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
 }
 
 .related-product img {
     width: 100%;
-    height: 250px;
+    height: 200px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
-.related-name {
-    margin-top: 15px;
-    font-weight: bold;
+.related-product p {
     font-size: 18px;
-    color: black;
+    margin: 5px 0;
 }
 
-.related-price {
-    margin-top: 5px;
-    font-size: 16px;
-    color: brown;
-    font-weight: bold;
+.related-product:hover {
+    transform: scale(1.05);
 }
