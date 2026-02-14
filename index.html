@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="style.css">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SIE | Custom Perfumes</title>
@@ -9,29 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
-    <script src="script.js"></script>
 body {
-    <header class="navbar">
-
-    <div class="menu-icon" onclick="openDrawer()">☰</div>
-
-    <div class="logo">MECNEX</div>
-
-    <div class="nav-icons">
-
-        <div class="search-wrapper">
-            <span onclick="toggleSearch()">🔍</span>
-            <input type="text" class="search-input" placeholder="Search...">
-        </div>
-
-        <div class="cart-icon">
-            🛒
-            <span id="cart-count">0</span>
-        </div>
-
-    </div>
-
-</header>
     margin: 0;
     font-family: 'Poppins', sans-serif;
     background-color: #ffb6d9;  /* Soft Pink Background */
@@ -191,17 +168,7 @@ footer {
     from { transform: translateX(0%); }
     to { transform: translateX(-100%); }
 }
-    .best-seller-title {
-    font-size: 28px;
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-.best-seller-title span {
-    border-bottom: 2px solid white;
-    padding-bottom: 4px;
-    display: inline-block;
-}
+    /* --- BEST SELLERS SLIDER --- */
 
 .best-seller-section {
     padding: 60px 20px;
@@ -269,80 +236,6 @@ footer {
 .footer-features p {
     color: #000000 !important;  /* Black text */
 }
-  /* FOOTER LAYOUT */
-
-.main-footer {
-    background: black;
-    color: white;
-    padding: 70px 40px 30px;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 100px;
-}
-
-.footer-left,
-.footer-right {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
-.footer-section h4 {
-    margin-bottom: 20px;
-    font-size: 16px;
-    letter-spacing: 1px;
-}
-
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-section ul li {
-    margin-bottom: 10px;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.footer-section ul li:hover {
-    color: #ffb6d9;
-}
-
-.footer-section a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.footer-section a:hover {
-    color: #ffb6d9;
-}
-
-.newsletter input {
-    width: 250px;
-    padding: 12px;
-    border: none;
-    border-radius: 6px;
-    margin-top: 10px;
-}
-
-.copyright {
-    text-align: center;
-    margin-top: 60px;
-    font-size: 13px;
-    color: #888;
-}
-
-@media (max-width: 900px) {
-    .footer-container {
-        flex-direction: column;
-        gap: 50px;
-    }
-}  
 </style>
 </head>
 
@@ -467,81 +360,46 @@ footer {
 <!-- Main Footer -->
 <footer class="main-footer">
 
-    <div class="footer-container">
-
-        <!-- LEFT SIDE -->
-        <div class="footer-left">
-
-            <div class="footer-section">
-                <h4>Our Store</h4>
-                <a href="https://instagram.com/addy_here07" target="_blank">
-                    @addy_here07
-                </a>
-            </div>
-
-            <div class="footer-section">
-                <h4>Information</h4>
-                <ul>
-                    <li>Privacy Policy</li>
-                    <li>Shipping Policy</li>
-                    <li>Refund Policy</li>
-                    <li>Contact Information</li>
-                    <li>Terms of Service</li>
-                </ul>
-            </div>
-
-        </div>
-
-        <!-- RIGHT SIDE -->
-        <div class="footer-right">
-
-            <div class="footer-section">
-                <h4>Main Menu</h4>
-                <ul>
-                    <li>Home</li>
-                    <li>Shop</li>
-                    <li>Help</li>
-                    <li>Contact Us</li>
-                    <li>Track My Order</li>
-                    <li>Return & Exchange</li>
-                </ul>
-            </div>
-
-            <div class="footer-section newsletter">
-                <h4>Let’s get in touch</h4>
-                <p>Sign up for our newsletter and receive 10% off your first order.</p>
-                <input type="email" placeholder="Enter your email">
-            </div>
-
-        </div>
-
+    <div class="footer-column">
+        <h4>Our Store</h4>
+        <p>
+            <a href="https://instagram.com/addy_here07" target="_blank" style="color:white;">
+                Instagram
+            </a>
+        </p>
     </div>
 
-    <div class="copyright">
-        © 2026 SIE, Inc. All rights reserved
+    <div class="footer-column">
+        <h4>Main Menu</h4>
+        <ul>
+            <li>Home</li>
+            <li>Shop</li>
+            <li>Help</li>
+            <li>Contact Us</li>
+            <li>Track My Order</li>
+            <li>Return & Exchange</li>
+        </ul>
+    </div>
+
+    <div class="footer-column">
+        <h4>Information</h4>
+        <ul>
+            <li>Privacy Policy</li>
+            <li>Shipping Policy</li>
+            <li>Refund Policy</li>
+            <li>Contact Information</li>
+            <li>Terms of Service</li>
+        </ul>
+    </div>
+
+    <div class="footer-column newsletter">
+        <h4>Let’s get in touch</h4>
+        <p>Sign up for our newsletter and receive 10% off your first order.</p>
+        <input type="email" placeholder="Enter your email">
     </div>
 
 </footer>
-<!-- Overlay -->
-<div class="drawer-overlay" id="overlay"></div>
 
-<!-- Sliding Menu -->
-<div class="drawer" id="drawer">
-
-    <div class="drawer-links">
-        <a href="#">HOME</a>
-        <a href="#">SHOP</a>
-        <a href="#">HELP</a>
-        <a href="#">CONTACT US</a>
-        <a href="#">TRACK MY ORDER</a>
-        <a href="#">RETURN & EXCHANGE</a>
-    </div>
-
-    <div class="drawer-account">
-        <p>My Account</p>
-        <button>Log in</button>
-    </div>
-
+<div class="copyright">
+    © 2026 SIE, Inc. All rights reserved
 </div>
-</body>
-</html>
