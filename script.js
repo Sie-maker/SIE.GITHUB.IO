@@ -103,3 +103,8 @@ function closeMenu() {
     document.getElementById("sideMenu").classList.remove("active");
     document.getElementById("menuOverlay").classList.remove("active");
 }
+
+// Make functions available to HTML buttons
+window.submitReview = submitReview;
+window.deleteReview = deleteReview;
+window.adminLogin = adminLogin;
