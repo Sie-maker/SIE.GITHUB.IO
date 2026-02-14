@@ -93,7 +93,7 @@ function adminLogin() {
 }
 
 // ================= INITIAL LOAD =================
-document.addEventListener("DOMContentLoaded", displayReviews);script.js
+document.addEventListener("DOMContentLoaded", displayReviews);
 function openMenu() {
     document.getElementById("sideMenu").classList.add("active");
     document.getElementById("menuOverlay").classList.add("active");
