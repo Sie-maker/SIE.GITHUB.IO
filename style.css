@@ -88,3 +88,44 @@
 #adminBtn {
     display: none;
 }
+
+/* You Might Also Like Section */
+.related-section {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.related-title {
+    font-size: 26px;
+    margin-bottom: 30px;
+    color: #f5f5dc;
+}
+
+.related-product {
+    display: inline-block;
+    background: #f5f5dc;
+    padding: 20px;
+    border-radius: 10px;
+    width: 220px;
+}
+
+.related-product img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.related-name {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+.related-price {
+    margin-top: 5px;
+    font-size: 16px;
+    color: brown;
+    font-weight: bold;
+}
