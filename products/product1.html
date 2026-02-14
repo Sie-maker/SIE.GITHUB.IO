@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIE - Product</title>
+    <meta charset="UTF-8">
 
     <style>
         body {
@@ -115,6 +117,67 @@
             text-decoration: none;
             border-radius: 6px;
         }
+        /* ---------------- RESPONSIVE DESIGN ---------------- */
+
+@media (max-width: 768px) {
+
+    .brand {
+        font-size: 28px;
+        letter-spacing: 8px;
+        padding: 20px;
+    }
+
+    .image-scroll img {
+        width: 200px;
+        height: 250px;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .reviews-section {
+        padding: 25px;
+    }
+
+    .reviews-section h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .brand {
+        font-size: 22px;
+        letter-spacing: 6px;
+    }
+
+    .image-scroll {
+        gap: 15px;
+    }
+
+    .image-scroll img {
+        width: 160px;
+        height: 220px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+}
 
     </style>
 </head>
