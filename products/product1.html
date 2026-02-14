@@ -10,8 +10,8 @@
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background-color: black;
-            color: #ffb6d9; /* 🩷 Pink Text */
+            background-color: brown;
+            color: #f5f5dc /* 🩷 Pink Text */
         }
 
         /* Brand Header */
@@ -19,7 +19,7 @@
             text-align: center;
             font-size: 40px;
             font-weight: bold;
-            color: #ffb6d9;
+            color: #f5f5dc;
             padding: 30px;
             letter-spacing: 15px; /* Space in S I E */
             border-bottom: 1px solid #333;
@@ -48,7 +48,7 @@
             object-fit: cover;
             border-radius: 10px;
             flex-shrink: 0;
-            border: 2px solid #ffb6d9;
+            border: 2px solid #f5f5dc ;
         }
 
         /* Price */
@@ -63,7 +63,7 @@
         .description {
             margin-top: 15px;
             font-size: 18px;
-            color: #ffb6d9;
+            color: #f5f5dc;
         }
 
         /* Buttons */
@@ -73,7 +73,7 @@
             margin-top: 15px;
             padding: 12px;
             text-align: center;
-            background: #ffb6d9;
+            background: #f5f5dc;
             color: black;
             font-weight: bold;
             border-radius: 6px;
@@ -81,14 +81,14 @@
         }
 
         .btn:hover {
-            background: white;
+            background: 🤎;
         }
 
         /* Reviews Section */
         .reviews-section {
             margin-top: 60px;
             padding: 40px;
-            background: #ffb6d9; /* 🩷 Background */
+            background: #f5f5dc; /*  Background */
             border-radius: 10px;
         }
 
@@ -113,14 +113,17 @@
             display: inline-block;
             padding: 10px 20px;
             background: black;
-            color: #ffb6d9;
+            color: #f5f5dc;
             text-decoration: none;
             border-radius: 6px;
         }
         /* ---------------- RESPONSIVE DESIGN ---------------- */
 
 @media (max-width: 768px) {
-
+    
+    .product-name {
+        font-size: 28px;
+}
     .brand {
         font-size: 28px;
         letter-spacing: 8px;
@@ -155,6 +158,9 @@
 }
 
 @media (max-width: 480px) {
+    .product-name {
+         font-size: 22px;
+    }
 
     .brand {
         font-size: 22px;
@@ -178,7 +184,22 @@
         font-size: 15px;
     }
 }
+/* Product Name */
+.product-name {
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-top: 25px;
+    color: #f5f5dc;
+}
 
+ .review-stats {
+      margin-top: 15px;
+      font-size: 16px;
+      color: black;
+        }
+        
     </style>
 </head>
 
@@ -196,6 +217,8 @@
             <img src="image3.jpg" alt="Product Image 3">
             <img src="image4.jpg" alt="Product Image 4">
         </div>
+        
+        <div class="product-name">ROYAL OUD</div>
 
         <!-- Price -->
         <div class="price">₹ 999</div>
@@ -220,6 +243,12 @@
 
             <div class="rating">
                 Top Rating: 4.9 / 5
+            </div>
+
+            <div class="review-stats">
+       0 people rated this product <br>
+       0 customers wrote a review <br>
+       0 people read these reviews
             </div>
 
             <a href="#" class="write-review">Write a Review</a>
