@@ -236,9 +236,81 @@ footer {
 .footer-features p {
     color: #000000 !important;  /* Black text */
 }
+   /* FOOTER PREMIUM LAYOUT */
+
+.main-footer {
+    background: black;
+    color: white;
+    padding: 60px 40px 30px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+}
+
+.footer-column h4 {
+    margin-bottom: 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer-column ul li:hover {
+    color: #ffb6d9;
+}
+
+.footer-column a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: #ffb6d9;
+}
+
+.newsletter input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 13px;
+    color: #888;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+} 
 </style>
 </head>
-
 <body>
 
 <div class="top-banner">
@@ -360,46 +432,48 @@ footer {
 <!-- Main Footer -->
 <footer class="main-footer">
 
-    <div class="footer-column">
-        <h4>Our Store</h4>
-        <p>
-            <a href="https://instagram.com/addy_here07" target="_blank" style="color:white;">
-                Instagram
-            </a>
-        </p>
+    <div class="footer-grid">
+
+        <div class="footer-column">
+            <h4>Our Store</h4>
+            <div class="social-icon">
+                <a href="https://instagram.com/addy_here07" target="_blank">Instagram</a>
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h4>Main Menu</h4>
+            <ul>
+                <li>HOME</li>
+                <li>SHOP</li>
+                <li>HELP</li>
+                <li>CONTACT US</li>
+                <li>TRACK MY ORDER</li>
+                <li>RETURN & EXCHANGE</li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>Information</h4>
+            <ul>
+                <li>Privacy Policy</li>
+                <li>Shipping Policy</li>
+                <li>Refund Policy</li>
+                <li>Contact Information</li>
+                <li>Terms of Service</li>
+            </ul>
+        </div>
+
+        <div class="footer-column newsletter">
+            <h4>Let’s get in touch</h4>
+            <p>Sign up for our newsletter and receive 10% off your first order.</p>
+            <input type="email" placeholder="Enter your email">
+        </div>
+
     </div>
 
-    <div class="footer-column">
-        <h4>Main Menu</h4>
-        <ul>
-            <li>Home</li>
-            <li>Shop</li>
-            <li>Help</li>
-            <li>Contact Us</li>
-            <li>Track My Order</li>
-            <li>Return & Exchange</li>
-        </ul>
-    </div>
-
-    <div class="footer-column">
-        <h4>Information</h4>
-        <ul>
-            <li>Privacy Policy</li>
-            <li>Shipping Policy</li>
-            <li>Refund Policy</li>
-            <li>Contact Information</li>
-            <li>Terms of Service</li>
-        </ul>
-    </div>
-
-    <div class="footer-column newsletter">
-        <h4>Let’s get in touch</h4>
-        <p>Sign up for our newsletter and receive 10% off your first order.</p>
-        <input type="email" placeholder="Enter your email">
+    <div class="copyright">
+        © 2026 SIE, Inc. All rights reserved
     </div>
 
 </footer>
-
-<div class="copyright">
-    © 2026 SIE, Inc. All rights reserved
-</div>
