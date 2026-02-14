@@ -309,6 +309,34 @@ footer {
         grid-template-columns: 1fr;
     }
 } 
+    /* HEADER ICONS ADD WITHOUT HTML CHANGE */
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Left Menu Icon */
+header::before {
+    content: "☰";
+    position: absolute;
+    left: 20px;
+    font-size: 24px;
+    color: #ffb6d9;
+    cursor: pointer;
+}
+
+/* Right Side Container */
+header::after {
+    content: "🛒   🔍";
+    position: absolute;
+    right: 20px;
+    font-size: 22px;
+    color: #ffb6d9;
+    cursor: pointer;
+}
 </style>
 </head>
 <body>
