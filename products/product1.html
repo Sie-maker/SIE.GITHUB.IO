@@ -9,7 +9,7 @@
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
             background-color: black;
-            color: white;
+            color: #ffb6d9; /* 🩷 Pink Text */
         }
 
         /* Brand Header */
@@ -17,10 +17,11 @@
             text-align: center;
             font-size: 40px;
             font-weight: bold;
-            color: hotpink;
-            padding: 20px;
-            letter-spacing: 5px;
+            color: #ffb6d9;
+            padding: 30px;
+            letter-spacing: 15px; /* Space in S I E */
             border-bottom: 1px solid #333;
+            margin-bottom: 40px; /* Space before images */
         }
 
         /* Product Container */
@@ -34,9 +35,9 @@
         .image-scroll {
             display: flex;
             overflow-x: auto;
-            gap: 20px;
+            gap: 30px;
             scroll-behavior: smooth;
-            padding-bottom: 20px;
+            padding-bottom: 30px;
         }
 
         .image-scroll img {
@@ -45,49 +46,83 @@
             object-fit: cover;
             border-radius: 10px;
             flex-shrink: 0;
-            border: 2px solid hotpink;
+            border: 2px solid #ffb6d9;
         }
 
-        /* Product Info */
-        .product-name {
-            font-size: 28px;
-            margin-top: 20px;
-            font-weight: bold;
-        }
-
-        .description {
-            margin-top: 10px;
-            font-size: 18px;
-            color: #ccc;
-        }
-
+        /* Price */
         .price {
-            margin-top: 15px;
+            margin-top: 20px;
             font-size: 22px;
-            color: hotpink;
+            color: white; /* 🤍 White */
             font-weight: bold;
         }
 
-        /* Scrollbar Styling */
-        .image-scroll::-webkit-scrollbar {
-            height: 8px;
+        /* Description */
+        .description {
+            margin-top: 15px;
+            font-size: 18px;
+            color: #ffb6d9;
         }
 
-        .image-scroll::-webkit-scrollbar-thumb {
-            background: hotpink;
+        /* Buttons */
+        .btn {
+            display: block;
+            width: 250px;
+            margin-top: 15px;
+            padding: 12px;
+            text-align: center;
+            background: #ffb6d9;
+            color: black;
+            font-weight: bold;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        /* Reviews Section */
+        .reviews-section {
+            margin-top: 60px;
+            padding: 40px;
+            background: #ffb6d9; /* 🩷 Background */
             border-radius: 10px;
         }
 
-        .image-scroll::-webkit-scrollbar-track {
-            background: #222;
+        .reviews-section h2 {
+            color: black; /* 🖤 */
         }
+
+        .review-text {
+            color: black;
+            margin-top: 10px;
+        }
+
+        .rating {
+            font-size: 20px;
+            margin-top: 15px;
+            color: black;
+            font-weight: bold;
+        }
+
+        .write-review {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background: black;
+            color: #ffb6d9;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
     </style>
 </head>
 
 <body>
 
     <!-- Brand Name -->
-    <div class="brand">SIE</div>
+    <div class="brand">S I E</div>
 
     <div class="product-container">
 
@@ -99,14 +134,32 @@
             <img src="image4.jpg" alt="Product Image 4">
         </div>
 
-        <!-- Product Info -->
-        <div class="product.1">Product.1</div>
+        <!-- Price -->
+        <div class="price">₹ 999</div>
+
+        <!-- Description -->
         <div class="description">
-            Hello Shalima this is made for your first product sampale page 
+            Hello Shalima this is made for your first product sample page
         </div>
 
-        <div class="price">
-            ₹ 999
+        <!-- Buttons -->
+        <a href="#" class="btn">Add to Cart</a>
+        <a href="#" class="btn">Buy Now</a>
+        <a href="#" class="btn">Check Delivery Status</a>
+
+        <!-- Reviews Section -->
+        <div class="reviews-section">
+            <h2>Customer Reviews</h2>
+
+            <div class="review-text">
+                ⭐⭐⭐⭐⭐ Amazing fragrance! Long lasting and premium quality.
+            </div>
+
+            <div class="rating">
+                Top Rating: 4.9 / 5
+            </div>
+
+            <a href="#" class="write-review">Write a Review</a>
         </div>
 
     </div>
