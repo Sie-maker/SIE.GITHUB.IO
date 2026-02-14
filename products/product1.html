@@ -12,30 +12,27 @@
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
             background-color: brown;
-            color: black; /* 🩷 Pink Text */
+            color: black;
         }
 
-        /* Brand Header */
         .brand {
             text-align: center;
             font-size: 40px;
             font-weight: bold;
             color: black;
             padding: 30px;
-            letter-spacing: 15px; /* Space in S I E */
+            letter-spacing: 15px;
             border-bottom: 1px solid #333;
             background: #f5f5dc;
-            margin-bottom: 40px; /* Space before images */
+            margin-bottom: 40px;
         }
 
-        /* Product Container */
         .product-container {
             max-width: 1000px;
             margin: 40px auto;
             padding: 20px;
         }
 
-        /* Image Scroll Section */
         .image-scroll {
             display: flex;
             overflow-x: auto;
@@ -50,25 +47,22 @@
             object-fit: cover;
             border-radius: 10px;
             flex-shrink: 0;
-            border: 2px solid #f5f5dc ;
+            border: 2px solid #f5f5dc;
         }
 
-        /* Price */
         .price {
             margin-top: 20px;
             font-size: 22px;
-            color: white; /* 🤍 White */
+            color: white;
             font-weight: bold;
         }
 
-        /* Description */
         .description {
             margin-top: 15px;
             font-size: 18px;
             color: #f5f5dc;
         }
 
-        /* Buttons */
         .btn {
             display: block;
             width: 250px;
@@ -86,21 +80,15 @@
             background: brown;
         }
 
-        /* Reviews Section */
         .reviews-section {
             margin-top: 60px;
             padding: 40px;
-            background: #f5f5dc; /*  Background */
+            background: #f5f5dc;
             border-radius: 10px;
         }
 
         .reviews-section h2 {
-            color: black; /* 🖤 */
-        }
-
-        .review-text {
             color: black;
-            margin-top: 10px;
         }
 
         .rating {
@@ -110,178 +98,146 @@
             font-weight: bold;
         }
 
-        .write-review {
-            margin-top: 20px;
-            display: inline-block;
-            padding: 10px 20px;
-            background: black;
+        .product-name {
+            text-align: center;
+            font-size: 38px;
+            font-weight: bold;
+            letter-spacing: 4px;
+            margin-top: 25px;
             color: #f5f5dc;
-            text-decoration: none;
-            border-radius: 6px;
         }
-        /* ---------------- RESPONSIVE DESIGN ---------------- */
 
-@media (max-width: 768px) {
-    
-    .product-name {
-        font-size: 28px;
-}
-    .brand {
-        font-size: 28px;
-        letter-spacing: 8px;
-        padding: 20px;
-    }
-
-    .image-scroll img {
-        width: 200px;
-        height: 250px;
-    }
-
-    .price {
-        font-size: 20px;
-    }
-
-    .description {
-        font-size: 16px;
-    }
-
-    .btn {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .reviews-section {
-        padding: 25px;
-    }
-
-    .reviews-section h2 {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .product-name {
-         font-size: 22px;
-    }
-
-    .brand {
-        font-size: 22px;
-        letter-spacing: 6px;
-    }
-
-    .image-scroll {
-        gap: 15px;
-    }
-
-    .image-scroll img {
-        width: 160px;
-        height: 220px;
-    }
-
-    .price {
-        font-size: 18px;
-    }
-
-    .description {
-        font-size: 15px;
-    }
-}
-/* Product Name */
-.product-name {
-    text-align: center;
-    font-size: 38px;
-    font-weight: bold;
-    letter-spacing: 4px;
-    margin-top: 25px;
-    color: #f5f5dc;
-}
-
- .review-stats {
-      margin-top: 15px;
-      font-size: 16px;
-      color: black;
+        .review-stats {
+            margin-top: 15px;
+            font-size: 16px;
+            color: black;
         }
-        
+
+        /* ===== YOU MIGHT ALSO LIKE ===== */
+
+        .related-section {
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .related-title {
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #f5f5dc;
+            font-weight: bold;
+        }
+
+        .related-product {
+            background: #f5f5dc;
+            padding: 20px;
+            border-radius: 12px;
+            width: 250px;
+            margin: 0 auto;
+        }
+
+        .related-product img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .related-name {
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 18px;
+            color: black;
+        }
+
+        .related-price {
+            margin-top: 5px;
+            font-size: 16px;
+            color: brown;
+            font-weight: bold;
+        }
+
     </style>
 </head>
 
 <body>
 
-    <!-- Brand Name -->
-    <div class="brand">S I E</div>
+<div class="brand">S I E</div>
 
-    <div class="product-container">
+<div class="product-container">
 
-        <!-- Image Scroll Section -->
-        <div class="image-scroll">
-            <img src="image1.jpg" alt="Product Image 1">
-            <img src="image2.jpg" alt="Product Image 2">
-            <img src="image3.jpg" alt="Product Image 3">
-            <img src="image4.jpg" alt="Product Image 4">
-        </div>
-        
-        <div class="product-name">ROYAL OUD</div>
+    <div class="image-scroll">
+        <img src="image1.jpg" alt="Product Image 1">
+        <img src="image2.jpg" alt="Product Image 2">
+        <img src="image3.jpg" alt="Product Image 3">
+        <img src="image4.jpg" alt="Product Image 4">
+    </div>
 
-        <!-- Price -->
-        <div class="price">₹ 999</div>
+    <div class="product-name">ROYAL OUD</div>
 
-        <!-- Description -->
-        <div class="description">
-            Hello Shalima this is made for your first product sample page
-        </div>
+    <div class="price">₹ 999</div>
 
-        <!-- Buttons -->
-        <a href="#" class="btn">Add to Cart</a>
-        <a href="#" class="btn">Buy Now</a>
-        <a href="#" class="btn">Check Delivery Status</a>
+    <div class="description">
+        Hello Shalima this is made for your first product sample page
+    </div>
 
-        <!-- Reviews Section -->
-        <div class="reviews-section">
-            <h2>Customer Reviews</h2>
+    <a href="#" class="btn">Add to Cart</a>
+    <a href="#" class="btn">Buy Now</a>
+    <a href="#" class="btn">Check Delivery Status</a>
 
-            <div class="rating">
-                Top Rating: 4.9 / 5
-            </div>
-
-            <div class="review-stats">
-       0 people rated this product <br>
-       0 customers wrote a review <br>
-       0 people read these reviews
-            </div>
-            <button id="adminBtn" onclick="adminLogin()" 
-style="margin-top:15px;padding:8px 15px;background:red;color:white;border:none;border-radius:5px;">
-Admin Login
-            </button>
-
-          <!-- Review Form -->
+    <!-- Reviews Section -->
+    <div class="reviews-section">
+        <h2>Customer Reviews</h2>
+        <!-- Review Form -->
 <div id="review-form" style="margin-top:20px;">
-    <input type="text" id="reviewerName" placeholder="Your Name" style="padding:8px;width:100%;margin-bottom:10px;">
-    
-    <select id="reviewRating" style="padding:8px;width:100%;margin-bottom:10px;">
+    <input type="text" id="reviewerName" placeholder="Your Name" 
+        style="padding:8px;width:100%;margin-bottom:10px;">
+
+    <select id="reviewRating" 
+        style="padding:8px;width:100%;margin-bottom:10px;">
         <option value="5">⭐⭐⭐⭐⭐ (5)</option>
         <option value="4">⭐⭐⭐⭐ (4)</option>
         <option value="3">⭐⭐⭐ (3)</option>
         <option value="2">⭐⭐ (2)</option>
         <option value="1">⭐ (1)</option>
     </select>
-    
-    <textarea id="reviewMessage" placeholder="Write your review..." 
-    style="padding:8px;width:100%;height:80px;margin-bottom:10px;"></textarea>
-    
-    <button onclick="submitReview()" 
-    style="padding:10px 20px;background:black;color:#f5f5dc;border:none;border-radius:6px;">
-    Submit Review
+
+    <textarea id="reviewText" placeholder="Write your review..." 
+        style="padding:8px;width:100%;margin-bottom:10px;"></textarea>
+
+    <button onclick="addReview()" 
+        style="padding:10px 15px;background:black;color:white;border:none;">
+        Submit Review
     </button>
 </div>
 
-<hr style="margin:30px 0;">
+        <div class="rating">
+            Top Rating: 4.9 / 5
+        </div>
 
-<div id="allReviews"></div>  
-  </div>
+        <div class="review-stats">
+            0 people rated this product <br>
+            0 customers wrote a review <br>
+            0 people read these reviews
+        </div>
 
+        <hr style="margin:30px 0;">
+        <div id="allReviews"></div>
+    </div>
 
-  </div>
+    <!-- You Might Also Like Section -->
+    <div class="related-section">
+        <h2 class="related-title">You Might Also Like</h2>
+
+        <div class="related-product">
+            <img src="image1.jpg" alt="Related Product">
+            <div class="related-name">MIDNIGHT MUSK</div>
+            <div class="related-price">₹ 899</div>
+        </div>
+    </div>
+
+</div>
+
 <script src="../script.js"></script>
-    
+
 </body>
 </html>
