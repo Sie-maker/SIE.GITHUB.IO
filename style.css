@@ -82,4 +82,9 @@
     background: white;
     border: none;
     font-weight: bold;
+
+    #adminBtn {
+    display: none;
+    }
+    
 }style.css
