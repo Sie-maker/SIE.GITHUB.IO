@@ -252,10 +252,94 @@
        0 people read these reviews
             </div>
 
-            <a href="#" class="write-review">Write a Review</a>
+          <!-- Review Form -->
+<div id="review-form" style="margin-top:20px;">
+    <input type="text" id="reviewerName" placeholder="Your Name" style="padding:8px;width:100%;margin-bottom:10px;">
+    
+    <select id="reviewRating" style="padding:8px;width:100%;margin-bottom:10px;">
+        <option value="5">⭐⭐⭐⭐⭐ (5)</option>
+        <option value="4">⭐⭐⭐⭐ (4)</option>
+        <option value="3">⭐⭐⭐ (3)</option>
+        <option value="2">⭐⭐ (2)</option>
+        <option value="1">⭐ (1)</option>
+    </select>
+    
+    <textarea id="reviewMessage" placeholder="Write your review..." 
+    style="padding:8px;width:100%;height:80px;margin-bottom:10px;"></textarea>
+    
+    <button onclick="submitReview()" 
+    style="padding:10px 20px;background:black;color:#f5f5dc;border:none;border-radius:6px;">
+    Submit Review
+    </button>
+</div>
+
+<hr style="margin:30px 0;">
+
+<div id="allReviews"></div>  
         </div>
 
     </div>
+<script>
 
+let reviews = JSON.parse(localStorage.getItem("reviews")) || [];
+
+function displayReviews() {
+    const reviewContainer = document.getElementById("allReviews");
+    const ratingDisplay = document.querySelector(".rating");
+    const statsDisplay = document.querySelector(".review-stats");
+
+    reviewContainer.innerHTML = "";
+
+    if (reviews.length === 0) {
+        ratingDisplay.innerHTML = "Top Rating: 0 / 5";
+        statsDisplay.innerHTML = "0 people rated this product <br> 0 customers wrote a review <br> 0 people read these reviews";
+        return;
+    }
+
+    let totalRating = 0;
+
+    reviews.forEach((review) => {
+        totalRating += parseInt(review.rating);
+
+        reviewContainer.innerHTML += `
+            <div style="margin-bottom:20px;">
+                <strong>${review.name}</strong> - ${"⭐".repeat(review.rating)} <br>
+                ${review.message}
+            </div>
+        `;
+    });
+
+    let average = (totalRating / reviews.length).toFixed(1);
+
+    ratingDisplay.innerHTML = "Top Rating: " + average + " / 5";
+    statsDisplay.innerHTML = 
+        reviews.length + " people rated this product <br>" +
+        reviews.length + " customers wrote a review <br>" +
+        (reviews.length * 3) + " people read these reviews";
+}
+
+function submitReview() {
+    const name = document.getElementById("reviewerName").value;
+    const rating = document.getElementById("reviewRating").value;
+    const message = document.getElementById("reviewMessage").value;
+
+    if (name === "" || message === "") {
+        alert("Please fill all fields");
+        return;
+    }
+
+    reviews.push({ name, rating, message });
+    localStorage.setItem("reviews", JSON.stringify(reviews));
+
+    document.getElementById("reviewerName").value = "";
+    document.getElementById("reviewMessage").value = "";
+
+    displayReviews();
+}
+
+displayReviews();
+
+</script>
+    
 </body>
 </html>
