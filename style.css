@@ -82,9 +82,11 @@
     background: white;
     border: none;
     font-weight: bold;
+}
 
-    #adminBtn {
+/* HIDE ADMIN BUTTON */
+#adminBtn {
     display: none;
-    }
+}
     
 }style.css
